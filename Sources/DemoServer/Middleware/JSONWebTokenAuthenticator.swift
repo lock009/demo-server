@@ -1,3 +1,12 @@
+//
+//  JSONWebTokenAuthenticator.swift
+//  Demo-Server
+//
+//  Created by Rajveer Mann on 09/02/26.
+//
+
+
+
 import Vapor
 import JWT
 import Foundation

@@ -6,7 +6,6 @@
 //
 
 
-import Foundation
 import Fluent
 import Vapor
 
@@ -39,4 +38,19 @@ final class User : Model,Content,Validatable , @unchecked Sendable {
         validations.add("password", as : String.self,is: .count(6...12),customFailureDescription: "password must be between 8 and 12 ")
         validations.add("password", as : String.self,is: !.empty,customFailureDescription: "password cannot be empty")
     }
+}
+
+
+import Vapor
+import GroceryAppSharedModels
+
+extension RegisterResponse : Content,@unchecked Sendable{
+    
+}
+
+import Vapor
+import GroceryAppSharedModels
+
+extension LoginResponse : Content ,@unchecked Sendable{
+    
 }

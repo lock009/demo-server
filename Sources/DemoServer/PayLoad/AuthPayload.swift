@@ -1,3 +1,11 @@
+//
+//  AuthPayload.swift
+//  DemoServer
+//
+//  Created by Rajveer Mann on 09/02/26.
+//
+
+
 import Foundation
 import Vapor
 import JWT
